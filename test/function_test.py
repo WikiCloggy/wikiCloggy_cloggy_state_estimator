@@ -52,3 +52,9 @@ X = np.array([3.0, 4.0])
 gradient = function.numerical_gradient(function_2, X)
 expected_gradient = np.array([6, 8])
 npt.assert_almost_equal(gradient, expected_gradient)
+
+#경사하강법 테스트
+init_X = np.array([-3.0, 4.0])
+optimized_X = function.gradient_descent(function_2, init_X, learning_rate=0.1)
+expected_optimized_X = np.array([0, 0])
+npt.assert_array_almost_equal(optimized_X, expected_optimized_X)

@@ -4,8 +4,8 @@
 
 **I wrote this code while looking at the book 'Deep Learning from Scratch'.**
 # Requirements
-Python3 and later
-numpy
+Python3 and later  
+numpy  
 opencv
 
 # Usage
@@ -16,3 +16,5 @@ If you look at the demo.py, you can get information about how to predict cloggy 
 # Training
 If you get more state skeleton data, than just run cloggyNet_trainer.py.  
 If you want to add more state, add more state to label in label_maker.py and run. Then, add data to created label directories.
+
+If you want to make skeleton data, than use cloggy_dataset_maker in <https://github.com/WikiCloggy/cloggy_dataset_maker>!

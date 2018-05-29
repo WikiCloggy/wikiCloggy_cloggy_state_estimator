@@ -48,6 +48,8 @@ train_loss_list = []
 train_acc_list = []
 #test_acc_list = []
 
+net = cloggyNet(input_size, hidden_size, output_size)
+
 print("Training start!")
 iter_per_epoch = max(round(train_size / batch_size), 1)
 for i in range(iteration_num):

@@ -1,6 +1,8 @@
 # coding: utf-8
 import numpy as np
 import cv2
+import glob
+import os
 
 def smooth_curve(x):
     """손실 함수의 그래프를 매끄럽게 하기 위해 사용
@@ -139,3 +141,26 @@ def loadData(path):
     #plt.show()
     data = data.flatten()
     return data
+
+def setupData(data_path, label):
+    label_size = len(label)
+
+    data_array = []
+    table_array = []
+
+    for i in range(label_size):
+        path = os.path.join(data_path, label[i])
+        for dt_path in glob.glob(os.path.join(path, '*png')):
+            data = loadData(dt_path)
+            table = []
+
+            for j in range(label_size):
+                if j == i:
+                    value = 1
+                else:
+                    value = 0
+                table.append(value)
+            data_array.append(data)
+            table_array.append(table)
+
+    return (np.array(data_array), np.array(table_array))

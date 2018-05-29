@@ -11,27 +11,17 @@ label_file = open('./data/label.txt', 'rb')
 label = pickle.load(label_file)
 label_file.close()
 
-training_data = []
-training_table = []
-
 label_size = len(label)
 
-for i in range(label_size):
-    training_data_path = './training_data/' + label[i]
-    for path in glob.glob(os.path.join(training_data_path, '*.png')):
-        data = util.loadData(path)
-        table = []
+training_data_path = os.path.join(os.getcwd(), 'training_data')
+testing_data_path = os.path.join(os.getcwd(), 'testing_data')
+training_data, training_table = util.setupData(training_data_path, label)
+testing_data, testing_table = util.setupData(testing_data_path, label)
 
-        for j in range(label_size):
-            if j == i:
-                tf = 1
-            else:
-                tf = 0
-            table.append(tf)
-        training_data.append(data)
-        training_table.append(table)
 training_data = np.array(training_data)
 training_table = np.array(training_table)
+testing_data = np.array(testing_data)
+testing_table = np.array(testing_table)
 
 input_size = training_data.shape[1]
 output_size = label_size
@@ -46,9 +36,9 @@ train_size = training_data.shape[0]
 
 train_loss_list = []
 train_acc_list = []
-#test_acc_list = []
+test_acc_list = []
 
-net = cloggyNet(input_size, hidden_size, output_size)
+net = cloggyNet(input_size=input_size, hidden_size=hidden_size, output_size=output_size)
 
 print("Training start!")
 iter_per_epoch = max(round(train_size / batch_size), 1)
@@ -67,11 +57,11 @@ for i in range(iteration_num):
 
     if i % iter_per_epoch == 0:
         train_acc = net.accuracy(training_data, training_table)
-        #test_acc = net.accuracy(testing_data, testing_table)
+        test_acc = net.accuracy(testing_data, testing_table)
         train_acc_list.append(train_acc)
-        #test_acc_list.append(test_acc)
+        test_acc_list.append(test_acc)
         print("train acc : " + str(train_acc))
-        #print("test acc : " + str(test_acc))
+        print("test acc : " + str(test_acc))
 print("Training end")
 
 print("Saving parameters...")

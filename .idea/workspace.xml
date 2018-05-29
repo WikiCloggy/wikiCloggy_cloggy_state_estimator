@@ -4,6 +4,80 @@
     <list default="true" id="5138250d-2e7f-48b2-abf9-dc5d4c6675ce" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloggyNet_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cloggyNet_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloggy_state_estimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/cloggy_state_estimator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/params.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/params.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing_data/stomachache/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/testing_data/stomachache/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing_data/stomachache/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing_data/stomachache/test_skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/butt_scooting/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting1_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting1_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting2_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting2_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting3_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/butt_scooting/dog_scooting3_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/24e69e6ef07e40655e24e615bbf83f8c_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/24e69e6ef07e40655e24e615bbf83f8c_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/32487303-a-happy-and-friendly-dog-stretching-out-into-a-bowing-or-downdog-position_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/32487303-a-happy-and-friendly-dog-stretching-out-into-a-bowing-or-downdog-position_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/_stock-photo-dog-stretch-oneself-on-ground-1008128032_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/_stock-photo-dog-stretch-oneself-on-ground-1008128032_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/agdsgagdag_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/agdsgagdag_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/asdgasdgasd_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/asdgasdgasd_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/b0c8e62cc82eef28af523d2a57b66303_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/b0c8e62cc82eef28af523d2a57b66303_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dagsdga_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dagsdga_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dalmatian-dog-young-beautiful-stretching-yawning-grass-distinctive-its-white-black-spots-its-coat-45412847_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dalmatian-dog-young-beautiful-stretching-yawning-grass-distinctive-its-white-black-spots-its-coat-45412847_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dasdgadsg_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dasdgadsg_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dfa_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dfa_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dfadsf_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dfadsf_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dfasga_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dfasga_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dfsaf_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dfsaf_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dkf_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dkf_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dog-stretching-down_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dog-stretching-down_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/downward dog 1_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/downward dog 1_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dsagasdg_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dsagasdg_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dsc_0588_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dsc_0588_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/dsgasdgahfah_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/dsgasdgahfah_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/fsdgasdga_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/fsdgasdga_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/gbdvzcx_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/gbdvzcx_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/gdagsdg_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/gdagsdg_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/i (2)_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/i (2)_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/images_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/images_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/large-dog-bowing-smiling-happy-friendly-stretching-out-downdog-position-45397939_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/large-dog-bowing-smiling-happy-friendly-stretching-out-downdog-position-45397939_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/play-dog_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/play-dog_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/small_dog_stretching_kwl08-367_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/small_dog_stretching_kwl08-367_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/up-running_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/up-running_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/vorderkoerpertiefstellung_thwz (1)_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/vorderkoerpertiefstellung_thwz (1)_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/exciting/zxcz_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/exciting/zxcz_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/sss/butt_scooting/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/2624162607_13cc4bb141_b_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/2624162607_13cc4bb141_b_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/31-dta-musicienne-3867391243_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/31-dta-musicienne-3867391243_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/_dog_sick1_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/_dog_sick1_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/a1d587ca3a4210dba15b4a7a86eac7b8_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/a1d587ca3a4210dba15b4a7a86eac7b8_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/adgasdga_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/adgasdga_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/dd_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/dd_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/dog_05_ce0022_01_p_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/dog_05_ce0022_01_p_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/download (1)_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/download (1)_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/download_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/download_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/dscf9703-570x350_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/dscf9703-570x350_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/i_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/i_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/images-7_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/images-7_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/kakaotalk_20180322_191708614_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/kakaotalk_20180322_191708614_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/sadgasdga_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/sadgasdga_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/susisketch_by_lhuin-d92h9hw_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/susisketch_by_lhuin-d92h9hw_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stomachache/test_dog_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stomachache/test_dog_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/canine-stress-body-language-tail_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/canine-stress-body-language-tail_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/cosa-significa-quando-il-tuo-cane_feliway_modern_life_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/cosa-significa-quando-il-tuo-cane_feliway_modern_life_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/maxresdefault_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/maxresdefault_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/nerv_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/nerv_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/nervousdog_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/nervousdog_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/stressed/scared-dog-pic--9753299606_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/stressed/scared-dog-pic--9753299606_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/aggressive-and-dominant-dog-body-language-04_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/aggressive-and-dominant-dog-body-language-04_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/aggressive-german-shepherd-22877917_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/aggressive-german-shepherd-22877917_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/anger-aggressive-long-haired-german-shepherd-adult-dog-alsatian-purebred-wolf-lead-going-to-attack-widely-opened-81729351_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/anger-aggressive-long-haired-german-shepherd-adult-dog-alsatian-purebred-wolf-lead-going-to-attack-widely-opened-81729351_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/dog-agg_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/dog-agg_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/dog-aggression-training-2_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/dog-aggression-training-2_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/kakaotalk_20180528_163546502_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/kakaotalk_20180528_163546502_silhouette.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/very_aggressive/stock-photo-aggressive-german-shepherd-357500219_silhouette.png" beforeDir="false" afterPath="$PROJECT_DIR$/training_data/very_aggressive/stock-photo-aggressive-german-shepherd-357500219_silhouette.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +91,8 @@
       <file leaf-file-name="cloggy_state_estimator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloggy_state_estimator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -29,8 +100,8 @@
       <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="310">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -38,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloggyNet_trainer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cloggyNet_trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloggyNet_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            <state relative-caret-position="338">
+              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -50,11 +121,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="label_maker.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="two_layer_net.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/two_layer_net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="label_maker.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/label_maker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="72">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ntpath.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/cloggy/Lib/ntpath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -62,7 +154,7 @@
       <file leaf-file-name="image.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda3/envs/cloggy/Lib/site-packages/matplotlib/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11742">
+            <state relative-caret-position="129">
               <caret line="648" selection-start-line="648" selection-end-line="648" />
             </state>
           </provider>
@@ -80,8 +172,11 @@
       <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2679">
-              <caret line="141" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="291">
+              <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+              <folding>
+                <element signature="e#16#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,6 +197,8 @@
       <find>iter</find>
       <find>hi</find>
       <find>net</find>
+      <find>s</find>
+      <find>acc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,12 +210,12 @@
         <option value="$PROJECT_DIR$/network/cloggyNet.py" />
         <option value="$PROJECT_DIR$/test/function_test.py" />
         <option value="$PROJECT_DIR$/common/label_maker.py" />
-        <option value="$PROJECT_DIR$/label_maker.py" />
         <option value="$PROJECT_DIR$/common/demo.py" />
+        <option value="$PROJECT_DIR$/label_maker.py" />
         <option value="$PROJECT_DIR$/cloggy_state_estimator.py" />
+        <option value="$PROJECT_DIR$/cloggyNet_trainer.py" />
         <option value="$PROJECT_DIR$/common/util.py" />
         <option value="$PROJECT_DIR$/demo.py" />
-        <option value="$PROJECT_DIR$/cloggyNet_trainer.py" />
       </list>
     </option>
   </component>
@@ -140,6 +237,21 @@
             <path>
               <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="testing_data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cloggyNet_trainer">
+  <component name="RunManager" selected="Python.demo (1)">
     <configuration name="cloggyNet_trainer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cloggy_state_estimator2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,11 +380,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cloggyNet_trainer" />
         <item itemvalue="Python.demo (1)" />
+        <item itemvalue="Python.cloggyNet_trainer" />
+        <item itemvalue="Python.label_maker" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.cloggy_state_estimator" />
-        <item itemvalue="Python.label_maker" />
       </list>
     </recent_temporary>
   </component>
@@ -344,9 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -364,6 +473,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -385,6 +497,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1102">
           <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -419,35 +534,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/two_layer_net.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/envs/cloggy/Lib/site-packages/matplotlib/image.py">
+    <entry file="file://$USER_HOME$/Anaconda3/envs/cloggy/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11742">
-          <caret line="648" selection-start-line="648" selection-end-line="648" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2679">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="143">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloggy_state_estimator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="133">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/cloggy/Lib/site-packages/matplotlib/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="648" selection-start-line="648" selection-end-line="648" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/two_layer_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloggyNet_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="310">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
@@ -456,17 +594,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/label_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloggyNet_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

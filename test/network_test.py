@@ -21,7 +21,8 @@ class NetworkTest(unittest.TestCase):
                                  [1, 2, 10, 9, 8],
                                  [1, 2, 4, 3, 5],
                                  [10, 9, 13, 14, 18],
-                                 [3, 2, 6, 12, 15]])
+                                 [3, 2, 6, 12, 15],
+                                 [3, 5, 6, 7, 5]])
         self.T_Train = np.array([[1, 0],
                                  [1, 0],
                                  [0, 1],
@@ -32,6 +33,7 @@ class NetworkTest(unittest.TestCase):
                                  [0, 1],
                                  [0, 1],
                                  [1, 0],
+                                 [0, 1],
                                  [0, 1],
                                  [0, 1],
                                  [0, 1],
@@ -53,9 +55,9 @@ class NetworkTest(unittest.TestCase):
 
         self.training(net, iteration_num=2000)
 
-        test_case = [9, 10, 13, 14, 20]
+        test_case = [1, 2, 3, 4, 3]
         result = self.predict_bool(net, test_case)
-        self.assertEqual(result, True)
+        self.assertEqual(result, False)
 
     def training(self, network:tn.Network, iteration_num=4000, batch_size=6, learning_rate=0.1):
         train_size = self.X_train.shape[0]
@@ -90,5 +92,6 @@ class NetworkTest(unittest.TestCase):
         result = network.predict(case)
         index = np.argmax(result)
         return self.T_Label[index]
+
 if __name__ == '__main__':
     unittest.main()

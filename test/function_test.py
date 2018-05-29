@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.testing as npt
-from common import function
+from common import functions
 
 #test sigmoid
 X = np.array([-1.0, 1.0, 2.0])

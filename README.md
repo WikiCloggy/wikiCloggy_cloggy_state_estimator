@@ -9,7 +9,7 @@ numpy
 opencv
 
 # Usage
-Class cloggyNet is the neural network designed for trainig the cloggy states.  
+Class cloggyNet is the neural network designed for trainig the cloggy states with ~~skeleton~~ silhouette data.  
 Class cloggy_state_estimator is the trained cloggyNet and it can predict a cloggy state.  
 If you look at the demo.py, you can get information about how to predict cloggy state with cloggy_state_estimator.
 
@@ -17,4 +17,4 @@ If you look at the demo.py, you can get information about how to predict cloggy 
 If you get more state skeleton data, than just run cloggyNet_trainer.py.  
 If you want to add more state, add more state to label in label_maker.py and run. Then, add data to created label directories.
 
-If you want to make skeleton data, than use cloggy_dataset_maker in <https://github.com/WikiCloggy/cloggy_dataset_maker>!
+If you want to make ~~skeleton~~ silhouette data, than use cloggy_dataset_maker in <https://github.com/WikiCloggy/cloggy_dataset_maker>!

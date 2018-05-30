@@ -2,13 +2,13 @@ from darkflow.net.build import TFNet
 from common.singleton import BaseClassSingleton
 import dlib
 
-_ERROR_PIXEL = 10
+_ERROR_PIXEL = 40
 
 class DogDetector():
     def __init__(self, cfg='yolo', weights='yolov2'):
         self.options = {
-            'model': './cfg/' + cfg + '.cfg',
-            'load': './bin/' + weights + '.weights',
+            'model': './data/cfg/' + cfg + '.cfg',
+            'load': './data/weights/' + weights + '.weights',
             'threshold': 0.3,
             'gpu': 1.0,
             'savepb': True

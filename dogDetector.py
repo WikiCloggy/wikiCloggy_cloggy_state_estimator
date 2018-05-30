@@ -1,14 +1,19 @@
 from darkflow.net.build import TFNet
 from common.singleton import BaseClassSingleton
 import dlib
+import os
 
 _ERROR_PIXEL = 40
 
+root_path = os.path.dirname(os.path.abspath(__file__))
+
 class DogDetector():
     def __init__(self, cfg='yolo', weights='yolov2'):
+        model_path = os.path.join(root_path, 'cfg/' + cfg + '.cfg')
+        load_path = os.path.join(root_path, 'weights/' + weights + '.weights')
         self.options = {
-            'model': './data/cfg/' + cfg + '.cfg',
-            'load': './data/weights/' + weights + '.weights',
+            'model': model_path,
+            'load': load_path,
             'threshold': 0.3,
             'gpu': 1.0,
             'savepb': True
@@ -24,7 +29,7 @@ class DogDetector():
         return False
 
     def detectDogHead(self, img):
-        detector = dlib.simple_object_detector("./data/dog_detector.svm")
+        detector = dlib.simple_object_detector(os.path.join(root_path, "data/dog_detector.svm"))
         dets = detector(img)
 
         if(len(dets) == 0):
@@ -64,7 +69,7 @@ class DogDetector():
         r = result.right()
 
         print ( t, l, b, r)
-       
+
         x = max(l - round(_ERROR_PIXEL / 2), 0)
         y = max(t - round(_ERROR_PIXEL / 2), 0)
         width = r - l + _ERROR_PIXEL

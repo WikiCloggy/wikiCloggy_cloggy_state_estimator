@@ -8,6 +8,12 @@ Python3 and later
 numpy  
 opencv
 
+clone https://github.com/WikiCloggy/cloggy_extractor
+install dlib
+install yolo with https://github.com/thtrieu/darkflow
+mkdir weights
+download wieghts from https://github.com/thtrieu/darkflow
+
 # Usage
 Class cloggyNet is the neural network designed for trainig the cloggy states with ~~skeleton~~ silhouette data.  
 Class cloggy_state_estimator is the trained cloggyNet and it can predict a cloggy state.  

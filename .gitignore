@@ -46,7 +46,7 @@ ckpt/*
 #pytest cache
 .cache/
 
-data/weights/
+weights/
 
 cloggy_extractor/
 

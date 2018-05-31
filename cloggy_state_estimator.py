@@ -24,6 +24,11 @@ if __name__ == '__main__':
     path = sys.argv[1]
     img = cv2.imread(path)
 
+    height, width = img.shape[:2]
+    if width > 500 or height > 500:
+        size = (round(width / 2), round(height / 2))
+        img = cv2.resize(img, size, 0, 0, cv2.INTER_LINEAR)
+
     file_name = os.path.split(path)[1]
     file_name = file_name.split('.')[0]
     print("File name : " + file_name)
@@ -37,9 +42,22 @@ if __name__ == '__main__':
 
     estimator = cloggy_state_estimator()
 
-    dog_detector = DogDetector(cfg='yolo', weights='yolov2')
+    dog_detector = DogDetector(cfg='tiny-yolo-voc', weights='tiny-yolo-voc', threshold=0.08)
     detect_result = dog_detector.detectsOneDog(img)
+
+    if detect_result == False:
+        final_result = 'cloggy_not_found'
+
+        result_file_path = 'data/result/' + file_name + '.json'
+        result_file_path = os.path.join(root_path, result_file_path)
+        result_file = open(result_file_path, 'w')
+        json.dump(final_result, result_file)
+        result_file.close()
+
+        exit(0)
+
     rect = dog_detector.getDogRect(detect_result, img)
+
     print("Detected dog rect : ", rect)
     dog_head_result = dog_detector.detectDogHead(img)
     head_rect = dog_detector.getDogPartRect(dog_head_result, img)

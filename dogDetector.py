@@ -8,13 +8,13 @@ _ERROR_PIXEL = 40
 root_path = os.path.dirname(os.path.abspath(__file__))
 
 class DogDetector():
-    def __init__(self, cfg='yolo', weights='yolov2'):
+    def __init__(self, cfg='yolo', weights='yolov2', threshold=0.3):
         model_path = os.path.join(root_path, 'cfg/' + cfg + '.cfg')
         load_path = os.path.join(root_path, 'weights/' + weights + '.weights')
         self.options = {
             'model': model_path,
             'load': load_path,
-            'threshold': 0.3,
+            'threshold': threshold,
             'gpu': 1.0,
             'savepb': True
         }

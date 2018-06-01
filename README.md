@@ -19,6 +19,13 @@ Class cloggyNet is the neural network designed for trainig the cloggy states wit
 Class cloggy_state_estimator is the trained cloggyNet and it can predict a cloggy state.  
 If you look at the demo.py, you can get information about how to predict cloggy state with cloggy_state_estimator.
 
+## start_estimate.py
+~~~
+python start_estimate.py test/image/test1.jpg
+~~~
+The result will be saved into data/result with jason format  
+The input image will be changed to silhouette for predict and saved into data/input
+
 # Training
 If you get more state skeleton data, than just run cloggyNet_trainer.py.  
 If you want to add more state, add more state to label in label_maker.py and run. Then, add data to created label directories.

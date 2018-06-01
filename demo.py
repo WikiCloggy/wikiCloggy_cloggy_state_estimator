@@ -1,7 +1,8 @@
-from cloggy_state_estimator import cloggy_state_estimator
 from common import util
 import pickle
 import numpy as np
+from cloggy_state_estimator import cloggy_state_estimator
+
 estimator = cloggy_state_estimator()
 
 label_file = open('./data/label.txt', 'rb')

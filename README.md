@@ -24,7 +24,7 @@ If you look at the demo.py, you can get information about how to predict cloggy 
 python start_estimate.py test/image/test1.jpg
 ~~~
 The result will be saved into data/result with jason format  
-The input image will be changed to silhouette for predict and saved into data/input
+The input image will be changed to silhouette for estimation and saved into data/input
 
 # Training
 If you get more state skeleton data, than just run cloggyNet_trainer.py.  

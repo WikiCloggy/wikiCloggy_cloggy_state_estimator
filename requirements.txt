@@ -1,0 +1,5 @@
+Cython==0.28.1
+opencv-python==3.4.0.12
+matplotlib==2.2.2
+tensorflow==1.7.0
+numpy=1.14.2

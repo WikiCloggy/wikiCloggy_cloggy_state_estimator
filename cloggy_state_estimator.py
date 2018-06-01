@@ -26,7 +26,9 @@ if __name__ == '__main__':
 
     height, width = img.shape[:2]
     if width > 500 or height > 500:
-        size = (round(width / 2), round(height / 2))
+        width = round(width / 2)
+        height = round(height / 2)
+        size = (width, height)
         img = cv2.resize(img, size, 0, 0, cv2.INTER_LINEAR)
 
     file_name = os.path.split(path)[1]

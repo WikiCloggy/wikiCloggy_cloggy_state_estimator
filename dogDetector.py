@@ -32,9 +32,15 @@ class DogDetector():
             return False
         else:
             print(dog_list)
-            index = np.argmax(dog_list['confidence'])
-            print(dog_list[index])
-            return dog_list
+            temp = 0
+            index = 0
+            for i in range(len(dog_list)):
+                if dog_list[i] > temp:
+                    temp = dog_list[i]['confidence']
+                    index = i
+
+            print(dog_list[i])
+            return dog_list[index]
 
     def detectDogHead(self, img):
         detector = dlib.simple_object_detector(os.path.join(root_path, "data/dog_detector.svm"))

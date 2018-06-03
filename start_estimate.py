@@ -44,10 +44,6 @@ if __name__ == '__main__':
     file_name = file_name.split('.')[0]
     print("File name : " + file_name)
 
-    input_image_path = os.path.join(data_path, 'input_image')
-    input_image_path = os.path.join(input_image_path, file_name + '.jpg')
-    cv2.imwrite(input_image_path, img)
-
     label_path = os.path.join(root_path, 'data/label.txt')
     label_file = open(label_path, 'rb')
     label = pickle.load(label_file)
@@ -70,6 +66,10 @@ if __name__ == '__main__':
         result_file.close()
 
         exit(0)
+
+    input_image_path = os.path.join(data_path, 'input_image')
+    input_image_path = os.path.join(input_image_path, file_name + '.jpg')
+    cv2.imwrite(input_image_path, img)
 
     rect = dog_detector.getDogRect(detect_result, img)
 

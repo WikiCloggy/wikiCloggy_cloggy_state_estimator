@@ -52,7 +52,7 @@ if __name__ == '__main__':
     detect_result = dog_detector.detectsOneDog(img)
 
     if detect_result == False:
-        final_result = 'cloggy_not_found'
+        final_result = {'keyword' : 'cloggy_not_found'}
 
         result_file_path = os.path.join(data_path, 'result')
         result_file_path = os.path.join(result_file_path, file_name + '.json')

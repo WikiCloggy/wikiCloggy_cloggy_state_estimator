@@ -3,7 +3,7 @@ from common.singleton import BaseClassSingleton
 import dlib
 import os
 
-_ERROR_PIXEL = 20
+_ERROR_PIXEL = 40
 
 root_path = os.path.dirname(os.path.abspath(__file__))
 

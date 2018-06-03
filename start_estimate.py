@@ -25,20 +25,19 @@ if __name__ == '__main__':
     data_path = os.path.join(data_path, 'data')
 
     height, width = img.shape[:2]
-    if width > 640 or height > 640:
-        if width > height:
-            ratio = 640 / width
-            resize_width = 640
-            resize_height = round(height * ratio)
-        else:
-            ratio = 640 / height
-            resize_height = 640
-            resize_width = round(width * ratio)
-        img = util.resizeImage(img, (resize_width, resize_height), (0, 0, width, height))
-        #width = round(width / 2)
-        #height = round(height / 2)
-        #size = (width, height)
-        #img = cv2.resize(img, size, 0, 0, cv2.INTER_LINEAR)
+    if width > height:
+        ratio = 640 / width
+        resize_width = 640
+        resize_height = round(height * ratio)
+    else:
+        ratio = 640 / height
+        resize_height = 640
+        resize_width = round(width * ratio)
+    img = util.resizeImage(img, (resize_width, resize_height), (0, 0, width, height))
+    #width = round(width / 2)
+    #height = round(height / 2)
+    #size = (width, height)
+    #img = cv2.resize(img, size, 0, 0, cv2.INTER_LINEAR)
 
     file_name = os.path.split(path)[1]
     file_name = file_name.split('.')[0]

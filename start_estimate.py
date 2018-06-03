@@ -21,6 +21,8 @@ if __name__ == '__main__':
 
     path = sys.argv[1]
     img = cv2.imread(path)
+    data_path = os.path.split(root_path)[0]
+    data_path = os.path.join(data_path, 'data')
 
     height, width = img.shape[:2]
     if width > 500 or height > 500:
@@ -32,6 +34,10 @@ if __name__ == '__main__':
     file_name = os.path.split(path)[1]
     file_name = file_name.split('.')[0]
     print("File name : " + file_name)
+
+    input_image_path = os.path.join(data_path, 'input_image')
+    input_image_path = os.path.join(input_image_path, file_name + '.jpg')
+    cv2.imwrite(input_image_path, img)
 
     label_path = os.path.join(root_path, 'data/label.txt')
     label_file = open(label_path, 'rb')
@@ -48,8 +54,8 @@ if __name__ == '__main__':
     if detect_result == False:
         final_result = 'cloggy_not_found'
 
-        result_file_path = 'data/result/' + file_name + '.json'
-        result_file_path = os.path.join(root_path, result_file_path)
+        result_file_path = os.path.join(data_path, 'result')
+        result_file_path = os.path.join(result_file_path, file_name + '.json')
         result_file = open(result_file_path, 'w')
         json.dump(final_result, result_file)
         result_file.close()
@@ -64,21 +70,21 @@ if __name__ == '__main__':
     isDogHeadOnLeft = dog_detector.isLeft(rect, head_rect)
 
     extractor = cloggy_extractor()
-    input_data = extractor.delete_background(img, rect)
+    input_silhouette = extractor.delete_background(img, rect)
 
-    input_data = util.resizeImage(input_data, data_size, rect, True)
+    input_silhouette = util.resizeImage(input_silhouette, data_size, rect, True)
 
     if not isDogHeadOnLeft:
-        input_data = cv2.flip(input_data, 1)
+        input_silhouette = cv2.flip(input_silhouette, 1)
 
-    input_data_path = 'data/input/' + file_name + '.png'
-    input_data_path = os.path.join(root_path, input_data_path)
-    cv2.imwrite(input_data_path, input_data)
+    input_silhouette_path = os.path.join(data_path, 'input_silhouette')
+    input_silhouette_path = os.path.join(input_silhouette_path, file_name + '.png')
+    cv2.imwrite(input_silhouette_path, input_silhouette)
 
-    input_data = np.where(input_data > 0, 1, 0)
-    input_data = input_data.flatten()
+    input_silhouette = np.where(input_silhouette > 0, 1, 0)
+    input_silhouette = input_silhouette.flatten()
 
-    result = estimator.predict(input_data)
+    result = estimator.predict(input_silhouette)
     index = np.argmax(result)
 
     _label = label.copy()
@@ -96,8 +102,8 @@ if __name__ == '__main__':
         final_result.append(res)
 
     print(final_result)
-    result_file_path = 'data/result/' + file_name + '.json'
-    result_file_path = os.path.join(root_path, result_file_path)
+    result_file_path = os.path.join(data_path, 'result')
+    result_file_path = os.path.join(result_file_path, file_name + '.json')
     result_file = open(result_file_path, 'w')
     json.dump(final_result, result_file)
     result_file.close()

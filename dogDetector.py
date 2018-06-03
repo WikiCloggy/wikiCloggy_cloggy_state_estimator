@@ -23,10 +23,15 @@ class DogDetector():
 
     def detectsOneDog(self, img):
         result = self.tfnet.return_predict(img)
+        dog_list = []
         for res in result:
             if res['label'] == 'dog':
-                return res
-        return False
+                dog_list.append(res)
+        if len(dog_list) == 0:
+            return False
+        else:
+            print(dog_list)
+            return dog_list
 
     def detectDogHead(self, img):
         detector = dlib.simple_object_detector(os.path.join(root_path, "data/dog_detector.svm"))

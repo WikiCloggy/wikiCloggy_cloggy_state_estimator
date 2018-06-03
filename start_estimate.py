@@ -27,11 +27,11 @@ if __name__ == '__main__':
     height, width = img.shape[:2]
     if width > 640 or height > 640:
         if width > height:
-            ratio = width / 640
+            ratio = 640 / width
             resize_width = 640
             resize_height = round(height * ratio)
         else:
-            ratio = height / 640
+            ratio = 640 / height
             resize_height = 640
             resize_width = round(width * ratio)
         img = util.resizeImage(img, (resize_width, resize_height), (0, 0, width, height))

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5138250d-2e7f-48b2-abf9-dc5d4c6675ce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/start_estiamte.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cloggy_extractor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloggy_state_estimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/cloggy_state_estimator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="cloggy_state_estimator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloggy_state_estimator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="19">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -28,8 +27,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start_estiamte.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/start_estiamte.py">
+      <file leaf-file-name="cloggy_extractor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloggy_extractor/cloggy_extractor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2337">
+              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="131" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cloggy_extractor_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/cloggy_extractor_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/darkflow/net/yolo/misc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="darknet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/darkflow/dark/darknet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_estimate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start_estimate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
@@ -41,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/network/cloggyNet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -49,7 +93,7 @@
       <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="38">
               <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -67,23 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dogDetector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dogDetector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -111,6 +143,7 @@
       <find>ip</find>
       <find>num</find>
       <find>darkflow</find>
+      <find>FLAGS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,21 +158,24 @@
         <option value="$PROJECT_DIR$/cloggyNet_trainer.py" />
         <option value="$PROJECT_DIR$/label_maker.py" />
         <option value="$PROJECT_DIR$/common/util.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cloggy_extractor/cloggy_extractor_test.py" />
         <option value="$PROJECT_DIR$/dogDetector.py" />
         <option value="$PROJECT_DIR$/network/cloggyNet.py" />
         <option value="$PROJECT_DIR$/cloggy_state_estimator.py" />
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/start_estiamte.py" />
+        <option value="$PROJECT_DIR$/cloggy_extractor/cloggy_extractor.py" />
+        <option value="$PROJECT_DIR$/test/cloggy_extractor_test.py" />
+        <option value="$PROJECT_DIR$/darkflow/net/yolo/misc.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="312" />
-    <option name="y" value="1" />
+    <option name="x" value="516" />
+    <option name="y" value="3" />
     <option name="width" value="1480" />
-    <option name="height" value="989" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -156,6 +192,11 @@
             <path>
               <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
               <item name="cloggy_extractor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -168,6 +209,50 @@
               <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="cython_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="dark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="mnist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloggy_state_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="darkflow" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="yolo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloggy_state_estimator" type="b2602c69:ProjectViewProjectNode" />
@@ -209,6 +294,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gaddo_000\PycharmProjects\cloggy_state_estimator\test" />
       <recent name="C:\Users\gaddo_000\PycharmProjects\cloggy_state_estimator2" />
     </key>
   </component>
@@ -224,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo (1)">
+  <component name="RunManager" selected="Python.cloggy_extractor_test">
     <configuration name="cloggyNet_trainer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cloggy_state_estimator2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,7 +329,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="cloggy_state_estimator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cloggy_extractor_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cloggy_state_estimator2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -251,11 +337,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cloggy_state_estimator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/cloggy_extractor_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -317,18 +403,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.cloggyNet_trainer" />
-      <item itemvalue="Python.cloggy_state_estimator" />
       <item itemvalue="Python.label_maker" />
       <item itemvalue="Python.demo" />
       <item itemvalue="Python.demo (1)" />
+      <item itemvalue="Python.cloggy_extractor_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cloggy_extractor_test" />
         <item itemvalue="Python.demo (1)" />
         <item itemvalue="Python.cloggyNet_trainer" />
         <item itemvalue="Python.label_maker" />
         <item itemvalue="Python.demo" />
-        <item itemvalue="Python.cloggy_state_estimator" />
       </list>
     </recent_temporary>
   </component>
@@ -346,10 +432,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="250" y="1" width="1184" height="791" extended-state="0" />
+    <frame x="249" y="0" width="1184" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19965127" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19965127" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -369,22 +455,22 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3027523" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19965127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32771823" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3027523" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32874617" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32771823" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -396,23 +482,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloggy_state_estimator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/result/sample_dog1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="63" selection-start-column="63" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dogDetector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
@@ -699,13 +768,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.json" />
-    <entry file="file://$PROJECT_DIR$/cloggy_extractor/cloggy_extractor_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dogDetector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
@@ -723,23 +785,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/cloggyNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="38">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -747,20 +795,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/start_estimate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/cloggyNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloggy_state_estimator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="19">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_estiamte.py">
+    <entry file="file://$PROJECT_DIR$/cloggy_extractor/cloggy_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        <state relative-caret-position="2337">
+          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="131" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/cloggy_extractor_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/darkflow/dark/darknet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/darkflow/net/yolo/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>

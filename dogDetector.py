@@ -35,7 +35,7 @@ class DogDetector():
             temp = 0
             index = 0
             for i in range(len(dog_list)):
-                if dog_list[i] > temp:
+                if dog_list[i]['confidence'] > temp:
                     temp = dog_list[i]['confidence']
                     index = i
 

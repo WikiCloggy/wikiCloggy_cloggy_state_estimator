@@ -35,7 +35,7 @@ class DogDetector():
             temp_area = 0
             index = 0
             for i in range(len(dog_list)):
-                rect = self.getDogRect(dog_list[i])
+                rect = self.getDogRect(dog_list[i], img)
                 area = rect[2] * rect[3]
                 if area > temp_area:
                     temp_area = area

@@ -39,7 +39,7 @@ class DogDetector():
                     temp = dog_list[i]['confidence']
                     index = i
 
-            print(dog_list[i])
+            print(dog_list[index])
             return dog_list[index]
 
     def detectDogHead(self, img):

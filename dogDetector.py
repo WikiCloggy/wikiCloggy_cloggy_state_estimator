@@ -32,11 +32,13 @@ class DogDetector():
             return False
         else:
             print(dog_list)
-            temp = 0
+            temp_area = 0
             index = 0
             for i in range(len(dog_list)):
-                if dog_list[i]['confidence'] > temp:
-                    temp = dog_list[i]['confidence']
+                rect = self.getDogRect(dog_list[i])
+                area = rect[2] * rect[3]
+                if area > temp_area:
+                    temp_area = area
                     index = i
 
             print(dog_list[index])

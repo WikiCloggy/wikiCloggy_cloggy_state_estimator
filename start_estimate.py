@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
     estimator = cloggy_state_estimator()
 
-    dog_detector = DogDetector(cfg='tiny-yolo-voc', weights='tiny-yolo-voc', threshold=0.03)
+    dog_detector = DogDetector(cfg='tiny-yolo-voc', weights='tiny-yolo-voc', threshold=0.05)
     detect_result = dog_detector.detectsOneDog(img)
 
     if detect_result == False:

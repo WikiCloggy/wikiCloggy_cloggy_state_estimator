@@ -2,6 +2,7 @@ from darkflow.net.build import TFNet
 from common.singleton import BaseClassSingleton
 import dlib
 import os
+import numpy as np
 
 _ERROR_PIXEL = 40
 
@@ -31,6 +32,8 @@ class DogDetector():
             return False
         else:
             print(dog_list)
+            index = np.argmax(dog_list['confidence'])
+            print(dog_list[index])
             return dog_list
 
     def detectDogHead(self, img):

@@ -25,7 +25,7 @@ if __name__ == '__main__':
     data_path = os.path.join(data_path, 'data')
 
     height, width = img.shape[:2]
-    if width > 500 or height > 500:
+    if width > 700 or height > 700:
         width = round(width / 2)
         height = round(height / 2)
         size = (width, height)

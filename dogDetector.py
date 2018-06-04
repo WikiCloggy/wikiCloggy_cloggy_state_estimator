@@ -4,7 +4,7 @@ import dlib
 import os
 import numpy as np
 
-_ERROR_PIXEL = 60
+
 
 root_path = os.path.dirname(os.path.abspath(__file__))
 
@@ -65,10 +65,14 @@ class DogDetector():
         tl = result['topleft']
         br = result['bottomright']
 
-        x = max(tl['x'] - round(_ERROR_PIXEL / 2), 0)
-        y = max(tl['y'] - round(_ERROR_PIXEL / 2), 0)
-        width = br['x'] - tl['x'] + _ERROR_PIXEL
-        height = br['y'] - tl['y'] + _ERROR_PIXEL
+
+        width = br['x'] - tl['x']
+        height = br['y'] - tl['y']
+        error_pixel = round(max(width, height) / 8)
+        width += error_pixel
+        height += error_pixel
+        x = max(tl['x'] - round(error_pixel / 2), 1)
+        y = max(tl['y'] - round(error_pixel / 2), 1)
 
         imgHeight, imgWidth = originalImg.shape[:2]
 

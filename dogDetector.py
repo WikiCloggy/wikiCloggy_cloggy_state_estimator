@@ -90,10 +90,13 @@ class DogDetector():
 
         print ( t, l, b, r)
 
-        x = max(l - round(_ERROR_PIXEL / 2), 0)
-        y = max(t - round(_ERROR_PIXEL / 2), 0)
-        width = r - l + _ERROR_PIXEL
-        height = b - t + _ERROR_PIXEL
+        width = r - l
+        height = b - t
+        error_pixel = round(max(width, height) / 8)
+        width += error_pixel
+        height += error_pixel
+        x = max(l - round(error_pixel / 2), 0)
+        y = max(t - round(error_pixel / 2), 0)
 
         imgHeight, imgWidth = originalImg.shape[:2]
 

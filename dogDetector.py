@@ -68,7 +68,7 @@ class DogDetector():
 
         width = br['x'] - tl['x']
         height = br['y'] - tl['y']
-        error_pixel = round(max(width, height) / 6)
+        error_pixel = round(max(width, height) / 4)
         width += error_pixel
         height += error_pixel
         x = max(tl['x'] - round(error_pixel / 2), 1)
@@ -92,7 +92,7 @@ class DogDetector():
 
         width = r - l
         height = b - t
-        error_pixel = round(max(width, height) / 6)
+        error_pixel = round(max(width, height) / 4)
         width += error_pixel
         height += error_pixel
         x = max(l - round(error_pixel / 2), 0)

@@ -4,7 +4,7 @@ import dlib
 import os
 import numpy as np
 
-_ERROR_PIXEL = 40
+_ERROR_PIXEL = 60
 
 root_path = os.path.dirname(os.path.abspath(__file__))
 

@@ -28,8 +28,8 @@ output_size = label_size
 hidden_size = round(input_size / 2)
 
 
-iteration_num = 1000
-batch_size = 10
+iteration_num = 5000
+batch_size = 20
 learning_rate = 0.1
 
 train_size = training_data.shape[0]
@@ -60,8 +60,9 @@ for i in range(iteration_num):
         test_acc = net.accuracy(testing_data, testing_table)
         train_acc_list.append(train_acc)
         test_acc_list.append(test_acc)
-        print("train acc : " + str(train_acc))
-        print("test acc : " + str(test_acc))
+        print("Iteration : ", i + 1)
+        print("train acc : ", train_acc)
+        print("test acc : ", test_acc)
 print("Training end")
 
 print("Saving parameters...")

@@ -106,6 +106,7 @@ if __name__ == '__main__':
                 result[j] = temp
                 _label[i] = _label[j]
                 _label[j] = temp_label
+        print(result)
         res = {'keyword': _label[i], 'probability': round(result[i], 2)}
         final_result.append(res)
 

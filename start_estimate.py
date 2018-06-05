@@ -2,7 +2,7 @@ from cloggy_state_estimator import cloggy_state_estimator
 from cloggy_extractor.cloggy_extractor import cloggy_extractor
 
 import pickle
-from common import util
+from common import util,functions
 import os
 import sys
 import cv2
@@ -93,6 +93,7 @@ if __name__ == '__main__':
     input_silhouette = input_silhouette.flatten()
 
     result = estimator.predict(input_silhouette)
+    result = functions.softmax(result[0])
     index = np.argmax(result)
 
     _label = label.copy()

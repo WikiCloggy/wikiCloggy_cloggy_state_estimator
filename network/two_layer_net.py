@@ -26,6 +26,8 @@ class TwoLayerNet:
         self.lastLayer = SoftmaxWithLoss()
 
     def predict(self, x):
+        if len(x.shape) == 1:
+            x = np.reshape(x, (1, x.shape[0]))
         for layer in self.layers.values():
             x = layer.forward(x)
 

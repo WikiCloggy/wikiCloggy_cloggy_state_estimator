@@ -144,7 +144,6 @@ if __name__ == '__main__':
         res = {'keyword': _label[i], 'probability': round(result[i], 2)}
         final_result.append(res)
 
-    print(final_result)
     result_file_path = os.path.join(data_path, 'result')
     result_file_path = os.path.join(result_file_path, file_name + '.json')
     save_result(final_result, result_file_path)

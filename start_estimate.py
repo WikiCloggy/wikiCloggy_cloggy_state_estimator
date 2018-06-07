@@ -92,6 +92,7 @@ if __name__ == '__main__':
     rect = dog_detector.getDogRect(detect_result, img)
     print("Detected dog rect : ", rect)
 
+    print(flip)
     if flip is None:
         dog_head_result = dog_detector.detectDogHead(img)
         if not dog_head_result:
@@ -107,7 +108,7 @@ if __name__ == '__main__':
         if not isLeft:
             flip = True
         else:
-            flip = False  
+            flip = False
 
     extractor = cloggy_extractor()
     input_silhouette = extractor.delete_background(img, rect)

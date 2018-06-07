@@ -57,6 +57,9 @@ if __name__ == '__main__':
 
     data_size = (60, 60)
 
+    extractor = cloggy_extractor()
+    img = extractor.optimze_image_size(img)
+
     estimator = cloggy_state_estimator()
 
     dog_detector = DogDetector(cfg='tiny-yolo-voc', weights='tiny-yolo-voc', threshold=0.05)
@@ -95,7 +98,7 @@ if __name__ == '__main__':
         else:
             flip = False
 
-    extractor = cloggy_extractor()
+
     input_silhouette = extractor.delete_background(img, rect)
 
     input_silhouette = util.resizeImage(input_silhouette, data_size, rect, True)

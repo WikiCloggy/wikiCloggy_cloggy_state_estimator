@@ -50,21 +50,6 @@ if __name__ == '__main__':
                 save_result(result, result_file_path)
                 exit(0)
 
-    height, width = img.shape[:2]
-    if width > height:
-        ratio = 640 / width
-        resize_width = 640
-        resize_height = round(height * ratio)
-    else:
-        ratio = 640 / height
-        resize_height = 640
-        resize_width = round(width * ratio)
-    img = util.resizeImage(img, (resize_width, resize_height), (0, 0, width, height))
-    #width = round(width / 2)
-    #height = round(height / 2)
-    #size = (width, height)
-    #img = cv2.resize(img, size, 0, 0, cv2.INTER_LINEAR)
-
     label_path = os.path.join(root_path, 'data/label.txt')
     label_file = open(label_path, 'rb')
     label = pickle.load(label_file)

@@ -50,7 +50,7 @@ class DogDetector():
 
         if(len(dets) == 0):
             print("Can't detect Head")
-            dets_pop=dlib.rectangle(0,0,0,0)
+            return False
         else :
             dets_pop = dets.pop()
         return dets_pop
@@ -64,7 +64,6 @@ class DogDetector():
     def getDogRect(self, result, originalImg):
         tl = result['topleft']
         br = result['bottomright']
-
 
         width = br['x'] - tl['x']
         height = br['y'] - tl['y']
@@ -88,7 +87,7 @@ class DogDetector():
         b = result.bottom()
         r = result.right()
 
-        print ( t, l, b, r)
+        print(t, l, b, r)
 
         width = r - l
         height = b - t

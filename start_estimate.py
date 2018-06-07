@@ -13,6 +13,7 @@ import json
 root_path = os.path.dirname(os.path.abspath(__file__))
 
 def save_result(result, file_path):
+    print(result)
     result_file = open(file_path, 'w')
     json.dump(result, result_file)
     result_file.close()
@@ -92,7 +93,6 @@ if __name__ == '__main__':
     rect = dog_detector.getDogRect(detect_result, img)
     print("Detected dog rect : ", rect)
 
-    print(flip)
     if flip is None:
         dog_head_result = dog_detector.detectDogHead(img)
         if not dog_head_result:

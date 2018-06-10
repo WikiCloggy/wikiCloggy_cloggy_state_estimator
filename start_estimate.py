@@ -107,7 +107,7 @@ if __name__ == '__main__':
         input_silhouette = cv2.flip(input_silhouette, 1)
 
     input_silhouette_path = os.path.join(data_path, 'input_silhouette')
-    input_silhouette_path = os.path.join(input_silhouette_path, file_name + '_' + extractor.version + '.png')
+    input_silhouette_path = os.path.join(input_silhouette_path, file_name + '_v' + extractor.version + '.png')
     cv2.imwrite(input_silhouette_path, input_silhouette)
 
     input_silhouette = np.where(input_silhouette > 0, 1, 0)

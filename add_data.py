@@ -64,4 +64,5 @@ if __name__ == '__main__':
 
     file_name = keyword + '_' + time
     data_path = os.path.join(data_path, file_name)
+    print(data_path)
     cv2.imwrite(data_path, silhouette)

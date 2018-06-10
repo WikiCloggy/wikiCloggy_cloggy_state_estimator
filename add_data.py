@@ -62,7 +62,7 @@ if __name__ == '__main__':
     if flip:
         silhouette = cv2.flip(silhouette, 1)
 
-    file_name = keyword + '_' + time
+    file_name = keyword + '_' + time + '.png'
     data_path = os.path.join(data_path, file_name)
     print(data_path)
     cv2.imwrite(data_path, silhouette)

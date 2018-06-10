@@ -33,7 +33,7 @@ if __name__ == '__main__':
     data_path = os.path.join(root_path, data_path)
 
     extractor = cloggy_extractor()
-    detector = DogDetector()
+    detector = DogDetector(cfg='tiny-yolo-voc', weights='tiny-yolo-voc', threshold=0.05)
     time = time.time().__str__()
     time = time.split('.')[0]
     img = extractor.optimze_image_size(img)

@@ -1,4 +1,5 @@
 from network.cloggyNet import cloggyNet
+from cloggy_state_estimator import cloggy_state_estimator
 from common import util,functions
 import cv2
 import glob
@@ -6,6 +7,10 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
+import datetime
+import json
+
+root_path = os.path.dirname(os.path.abspath(__file__))
 
 label_file = open('./data/label.txt', 'rb')
 label = pickle.load(label_file)
@@ -28,8 +33,8 @@ output_size = label_size
 hidden_size = round(input_size / 2)
 
 
-iteration_num = 5000
-batch_size = 20
+iteration_num = 1000
+batch_size = 10
 learning_rate = 0.1
 
 train_size = training_data.shape[0]
@@ -66,8 +71,18 @@ for i in range(iteration_num):
 print("Training end")
 
 print("Saving parameters...")
-params_file = open('./data/params.txt', 'wb')
+params_file = open('./data/params.pkl', 'wb')
 pickle.dump(net.params, params_file)
 params_file.close()
 print("Save parameters complete!")
-
+updateDate = datetime.datetime.now()
+updateDate = updateDate.__str__()
+updateDate = updateDate.split(' ')[0]
+result = "success"
+json_result = {"updateDate":updateDate, "result":result}
+json_path = 'data/result/train/trainedDate.json'
+dir_path = os.path.split(root_path)[0]
+json_path = os.path.join(dir_path, json_path)
+json_file = open(json_path, 'w')
+json.dump(json_result, json_file)
+json_file.close()

@@ -14,9 +14,9 @@ def setup_label(command_list, label_list):
                         index = label_list.index(command_list[i])
                     except:
                         label_list.append(command_list[i])
-                        i += 1
-                        if i == len(command_list):
-                            break
+                    i += 1
+                    if i == len(command_list):
+                        break
 
 if __name__ == '__main__':
     label_path = os.path.join(root_path, 'data/label.txt')

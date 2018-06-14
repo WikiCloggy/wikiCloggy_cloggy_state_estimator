@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import testing as npt
-from network import SimpleNet as sn, TwoLayerNet as tn
+from network import SimpleNet as sn
+from network import two_layer_net as tn
 import unittest
 import matplotlib.pyplot as plt
 
@@ -59,7 +60,7 @@ class NetworkTest(unittest.TestCase):
         result = self.predict_bool(net, test_case)
         self.assertEqual(result, False)
 
-    def training(self, network:tn.Network, iteration_num=4000, batch_size=6, learning_rate=0.1):
+    def training(self, network, iteration_num=4000, batch_size=6, learning_rate=0.1):
         train_size = self.X_train.shape[0]
 
         train_loss_list = []
@@ -88,7 +89,7 @@ class NetworkTest(unittest.TestCase):
                 test_acc_list.append(test_acc)
                 print("train acc, test acc : " + str(train_acc), str(test_acc))
 
-    def predict_bool(self, network:tn.Network, case):
+    def predict_bool(self, network, case):
         result = network.predict(case)
         index = np.argmax(result)
         return self.T_Label[index]

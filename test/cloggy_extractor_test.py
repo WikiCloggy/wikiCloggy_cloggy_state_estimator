@@ -15,13 +15,13 @@ def show_image(img, gray=False):
 extractor = cloggy_extractor()
 marker_size = 8
 skip_pixel = 6
-fg_threshold = 0.3
-bg_threshold = 0.25
+fg_threshold = 0.25
+bg_threshold = 0.3
 
-img = cv2.imread('image/test1.jpg')
+img = cv2.imread('image/test5.jpg')
 #show_image(img)
 
-rect = (105, 32, 521, 420)
+rect = (78, 37, 479, 391)
 img = extractor.optimze_image_size(img)
 _img = extractor.apply_filter(img)
 #show_image(img_filtered)
@@ -35,17 +35,9 @@ show_image(mask, True)
 bgd_model = np.zeros((1, 65), np.float64)
 fgd_model = np.zeros((1, 65), np.float64)
 
-# b, g, r = cv2.split(_img)
-# g = g * 2
-# marked_img = cv2.merge((b, g, r))
-
-# bg_color_list = extractor.extract_color_around_rect(_img, mask, rect)
-# fg_color_list = extractor.extract_foreground_color(_img, mask, rect)
 
 fg_color_list, bg_color_list = extractor.extract_color_list(img, mask, rect)
 
-# extractor.mark_image(_img, mask, rect, bg_color_list, marker_size, skip_pixel, bg_threshold)
-# extractor.mark_image(_img, mask, rect, fg_color_list, marker_size, skip_pixel, fg_threshold, 1)
 mask = extractor.mark_mask(mask, img, rect,
                       fg_color_list=fg_color_list, bg_color_list=bg_color_list,
                       marker_size=marker_size, skip_pixel=skip_pixel,
@@ -75,13 +67,13 @@ cv2.imwrite('auto.png', data)
 data2 = '../cloggy_extractor/images/sample_dog2.jpg'
 rect2 = (61, 38, 458, 372)
 data2 = cv2.imread(data2)
-data2 = extractor.delete_background(data2, rect2, marker_size=4, skip_pixel=6, threshold=3)
+data2 = extractor.delete_background(data2, rect2)
 data2 = ip.resizeImage(data2, data_size, rect2, True)
 show_image(data2, True)
 
 data3 = '../cloggy_extractor/images/sample_dog3.jpg'
 rect3 = (101, 43, 348, 277)
 data3 = cv2.imread(data3)
-data3 = extractor.delete_background(data3, rect3, marker_size=4, skip_pixel=6, threshold=3)
+data3 = extractor.delete_background(data3, rect3)
 data3 = ip.resizeImage(data3, data_size, rect3, True)
 show_image(data3, True)

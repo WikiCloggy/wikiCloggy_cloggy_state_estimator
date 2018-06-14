@@ -14,15 +14,15 @@ def show_image(img, gray=False):
 
 extractor = cloggy_extractor()
 
-img = cv2.imread('../cloggy_extractor/images/sample_dog1.jpg')
+img = cv2.imread('image/server_test.jpg')
 #show_image(img)
 
-rect = (87,59, 365, 259)
+rect = (125, 179, 164, 192)
 
 img_filtered = extractor.apply_filter(img)
 #show_image(img_filtered)
 
-around_rect_colors = extractor.extract_color_around_rect(img_filtered, rect)
+#around_rect_colors = extractor.extract_color_around_rect(img_filtered, rect)
 fg_colors = extractor.extract_foreground_color(img_filtered, rect)
 color_map = around_rect_colors.reshape((around_rect_colors.shape[0], 1, 3))
 show_image(color_map)

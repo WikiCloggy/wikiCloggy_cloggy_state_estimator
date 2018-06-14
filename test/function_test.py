@@ -1,6 +1,8 @@
 import numpy as np
 import numpy.testing as npt
-from common import functions
+from common import functions as function
+from common import gradient
+from common import optimizer
 
 #test sigmoid
 X = np.array([-1.0, 1.0, 2.0])
@@ -10,7 +12,7 @@ npt.assert_array_almost_equal(Y, expected_Y)
 
 #test ReLU
 X = np.array([-0.2, 0.3, 10.0, -2.0])
-Y = function.ReLU(X)
+Y = function.relu(X)
 expected_Y = np.array([0, 0.3, 10.0, 0])
 npt.assert_array_equal(Y, expected_Y)
 
@@ -41,7 +43,7 @@ def function_1(x):
 #0에서 20까지 0.1 간격의 배열 X 생성
 X = np.arange(0.0, 20.0, 0.1)
 Y = function_1(X)
-diff = function.numerical_diff(function_1, 5)
+diff = gradient.numerical_gradient(function_1, 5)
 expected_diff = 0.2
 npt.assert_almost_equal(diff, expected_diff)
 
@@ -49,12 +51,12 @@ npt.assert_almost_equal(diff, expected_diff)
 def function_2(X):
     return np.sum(X**2)
 X = np.array([3.0, 4.0])
-gradient = function.numerical_gradient(function_2, X)
+grad = gradient.numerical_gradient(function_2, X)
 expected_gradient = np.array([6, 8])
-npt.assert_almost_equal(gradient, expected_gradient)
+npt.assert_almost_equal(grad, expected_gradient)
 
 #경사하강법 테스트
 init_X = np.array([-3.0, 4.0])
-optimized_X = function.gradient_descent(function_2, init_X, learning_rate=0.1)
+optimized_X = gradient.gradient_descent(function_2, init_X, learning_rate=0.1)
 expected_optimized_X = np.array([0, 0])
 npt.assert_array_almost_equal(optimized_X, expected_optimized_X)

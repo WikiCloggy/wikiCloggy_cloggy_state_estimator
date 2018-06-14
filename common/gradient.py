@@ -1,6 +1,19 @@
 # coding: utf-8
 import numpy as np
 
+def gradient_descent(function, init_X, learning_rate=0.01, step_num=100):
+    #function : 최적화 하려는 함수
+    #init_X : 초깃값
+    #learning_rate : 학습률, 학습률이 너무 크면 큰 값으로 발산, 너무 작으면 거의 갱신되지 않음
+    #step_num : 경사 하강법 반복횟수
+    X = init_X
+
+    for i in range(step_num):
+        gradient = numerical_gradient(function, X)
+        X -= learning_rate * gradient
+
+    return X
+
 def _numerical_gradient_1d(f, x):
     h = 1e-4 # 0.0001
     grad = np.zeros_like(x)

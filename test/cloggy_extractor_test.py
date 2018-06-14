@@ -13,42 +13,61 @@ def show_image(img, gray=False):
     plt.show()
 
 extractor = cloggy_extractor()
+marker_size = 8
+skip_pixel = 6
+fg_threshold = 0.3
+bg_threshold = 0.25
 
-img = cv2.imread('image/server_test.jpg')
+img = cv2.imread('image/test1.jpg')
 #show_image(img)
 
-rect = (125, 179, 164, 192)
-
-img_filtered = extractor.apply_filter(img)
+rect = (105, 32, 521, 420)
+img = extractor.optimze_image_size(img)
+_img = extractor.apply_filter(img)
 #show_image(img_filtered)
+mask = np.zeros(img.shape[:2], np.uint8)
+bgd_model = np.zeros((1, 65), np.float64)
+fgd_model = np.zeros((1, 65), np.float64)
+cv2.grabCut(_img, mask, rect, bgd_model, fgd_model, 5, cv2.GC_INIT_WITH_RECT)
 
-#around_rect_colors = extractor.extract_color_around_rect(img_filtered, rect)
-fg_colors = extractor.extract_foreground_color(img_filtered, rect)
-color_map = around_rect_colors.reshape((around_rect_colors.shape[0], 1, 3))
-show_image(color_map)
+show_image(mask, True)
 
-marked_image = img_filtered.copy()
-extractor.mark_image(marked_image, marked_image, rect, around_rect_colors, 4, 6, 3)
-for y in range(59, 59 + 259, 6):
-    for x in range(59, 59 + 365, 6):
-        for i in range(fg_colors.shape[0]):
-            diff_mean = fg_colors[i] - marked_image[y, x]
-            diff_mean = np.mean(diff_mean)
-            if diff_mean < 3:
-                marked_image = cv2.circle(marked_image, (x, y), 4, (255, 255, 255), -1)
-            if abs(diff_mean) > 100:
-                marked_image = cv2.circle(marked_image, (x, y), 4, 0, -1)
+bgd_model = np.zeros((1, 65), np.float64)
+fgd_model = np.zeros((1, 65), np.float64)
 
-#extractor.mark_image(marked_image, marked_image, rect, fg_colors, 4, 6, 3, (255, 255, 255))
-show_image(marked_image)
+# b, g, r = cv2.split(_img)
+# g = g * 2
+# marked_img = cv2.merge((b, g, r))
 
+# bg_color_list = extractor.extract_color_around_rect(_img, mask, rect)
+# fg_color_list = extractor.extract_foreground_color(_img, mask, rect)
 
-img_silhouette = extractor.delete_background(img, rect, marker_size=4, skip_pixel=6, threshold=3)
-show_image(img_silhouette, True)
+fg_color_list, bg_color_list = extractor.extract_color_list(img, mask, rect)
+
+# extractor.mark_image(_img, mask, rect, bg_color_list, marker_size, skip_pixel, bg_threshold)
+# extractor.mark_image(_img, mask, rect, fg_color_list, marker_size, skip_pixel, fg_threshold, 1)
+mask = extractor.mark_mask(mask, img, rect,
+                      fg_color_list=fg_color_list, bg_color_list=bg_color_list,
+                      marker_size=marker_size, skip_pixel=skip_pixel,
+                      bg_threshold=bg_threshold, fg_threshold=fg_threshold)
+
+show_image(mask * 80, True)
+
+cv2.grabCut(_img, mask, rect, bgd_model, fgd_model, 5, cv2.GC_INIT_WITH_MASK)
+
+mask2 = np.where((mask == 1) + (mask == 3), 255, 0).astype('uint8')
+
+kernal_size = marker_size
+if kernal_size % 2 == 0:
+    kernal_size += 1
+kernal = np.ones((kernal_size, kernal_size), np.uint8)
+mask2 = cv2.morphologyEx(mask2, cv2.MORPH_CLOSE, kernal, 2)
+mask2 = cv2.morphologyEx(mask2, cv2.MORPH_OPEN, kernal)
+show_image(mask2, True)
 
 data_size = (120, 120)
 
-data = ip.resizeImage(img_silhouette, data_size, rect, True)
+data = ip.resizeImage(mask2, data_size, rect, True)
 show_image(data, True)
 
 cv2.imwrite('auto.png', data)

@@ -51,16 +51,16 @@ class NetworkTest(unittest.TestCase):
         self.output_size = self.T_Train.shape[1]
 
     def testTwoLayerNet(self):
-        hidden_size = 4
+        hidden_size = 12
         net = tn.TwoLayerNet(input_size=self.input_size, output_size=self.output_size, hidden_size=hidden_size)
 
-        self.training(net, iteration_num=2000)
+        self.training(net, iteration_num=50000)
 
-        test_case = [1, 2, 3, 4, 3]
+        test_case = np.array([1, 2, 3, 4, 3])
         result = self.predict_bool(net, test_case)
         self.assertEqual(result, False)
 
-    def training(self, network, iteration_num=4000, batch_size=6, learning_rate=0.1):
+    def training(self, network, iteration_num=4000, batch_size=6, learning_rate=0.01):
         train_size = self.X_train.shape[0]
 
         train_loss_list = []
@@ -74,7 +74,7 @@ class NetworkTest(unittest.TestCase):
             X_batch = self.X_train[batch_mask]
             T_batch = self.T_Train[batch_mask]
 
-            gradient = network.numerical_gradient(X_batch, T_batch)
+            gradient = network.gradient(X_batch, T_batch)
 
             for key in ('W1', 'b1', 'W2', 'b2'):
                 network.params[key] -= learning_rate * gradient[key]
